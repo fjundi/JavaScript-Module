@@ -11,8 +11,6 @@ console.log('x is equal to ' + x);
 
 let a = 7.25;
 
-Math.round(a);
-
 console.log(Math.round(a));
 
 
@@ -27,8 +25,8 @@ console.log('The array is ' + colors.length + ' strings long.');
 //5
 
 
-var x = 9;
-var y = 'Hello';
+let x = 9;
+let y = 'Hello';
 
 if (typeof x == typeof y) {
     console.log('SAME TYPE');
@@ -42,7 +40,8 @@ else {console.log('NOT SAME TYPE')
 
 let x = 7;
 
-console.log(x = x % 3); //x = 1
+x = x % 3
+console.log(x); //x = 1
 
 
 //7
@@ -54,8 +53,8 @@ console.log(types);
 
 
 /**/
-var x = 6/0;
-var y = 10/0;
+let x = 6/0;
+let y = 10/0;
 if ( x == y){
 console.log('Equal');
 }
