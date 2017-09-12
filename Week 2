@@ -36,7 +36,7 @@ for(let c in cam) {
 function vehicleType(color, code) {
 	if(code == 1) 
 console.log("A " + color + " car.");
-	else if(code == 2) 
+	else (code == 2) 
 console.log("A " + color + " motorbike.");
 }
  
