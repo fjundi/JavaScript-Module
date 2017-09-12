@@ -21,7 +21,7 @@ colorCar('purple')
 let cam = {
 	model : 'Leica',
 	year : '1954',
-	color : 'chrome with black leatherette’,
+	color : 'chrome with black leatherette',
 	size : '35mm',
 }
 
