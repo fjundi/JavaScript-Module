@@ -12,7 +12,7 @@ console.log(sum(3,5,8))
 //2
 
 function colorCar(x) {
-console.log("The car is " + x + ".")
+    console.log("The car is " + x + ".")
 }
 colorCar('purple')
 
@@ -34,18 +34,17 @@ for(let c in cam) {
 //4
 
 function vehicleType(color, code) {
-	if(code == 1) 
-console.log("A " + color + " car.");
-	else (code == 2) 
-console.log("A " + color + " motorbike.");
+    if(code == 1) 
+        console.log("A " + color + " car.");
+    else (code == 2) 
+    console.log("A " + color + " motorbike.");
 }
- 
-vehicleType("blue", 2);
 
+vehicleType("blue", 2);
 
 //5
 
-console.log (( 3==3? 'true' : 'false' ))
+console.log ( 3==3? 'true' : 'false' )
 
 
 //6
@@ -62,12 +61,13 @@ function vehicle(color, code, age) {
     else if(age < 5) {
         if (code === 1) {
             console.log("A " + color + " new"+ " car.");
-        } else if (code === 2) {
+        } else (code === 2) {
             console.log("A " + color + " new"+ " motorbike.");
         }
     } 
 }
-    vehicle("blue", 1, 5); 
+
+vehicle("blue", 1, 5);  
 
 //7
 
@@ -107,7 +107,7 @@ vehicle("green", 3, 1);
 
 //11
 
-list.push = "boats"
+list.unshift = "boats"
 
 //12
 
