@@ -1,0 +1,38 @@
+*{
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    max-width: 1100px;
+    text-align: center;
+    margin:auto;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding:0;
+    margin:0;
+    overflow: auto;
+    justify-content: space-around;
+}
+
+
+li {
+    width: 40%;
+    margin: 30px 0 30px;
+    background-color: #A2D1EA;
+    height: 450px;
+/*    text-align: right;*/
+    border: 1px solid #404040;
+    border-radius: 3px;
+    
+}
+
+h1 {
+font-size: 28px;
+    
+    
+}
