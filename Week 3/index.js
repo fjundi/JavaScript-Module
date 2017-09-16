@@ -91,22 +91,28 @@ function bookList(){
 
     for(b in bookInfo){
         let objectListChild = document.createElement('li');
+        objectListChild.setAttribute('id', b);
         objectList.appendChild(objectListChild);
+
+        let myDIV = document.createElement('div');
+
+        objectListChild.appendChild(myDIV);
+
 
         let bookTitle = document.createElement('h1');
         let titleText = document.createTextNode(bookInfo[b].title);
         bookTitle.appendChild(titleText);
-        objectListChild.appendChild(bookTitle);
+        myDIV.appendChild(bookTitle);
 
         let bookAuthor = document.createElement('h2');
         let authorText = document.createTextNode(bookInfo[b].author);
         bookAuthor.appendChild(authorText);
-        objectListChild.appendChild(bookAuthor);
+        myDIV.appendChild(bookAuthor);
 
         let bookLanguage = document.createElement('p');
         let languageText = document.createTextNode(bookInfo[b].language);
         bookLanguage.appendChild(languageText);
-        objectListChild.appendChild(bookLanguage);
+        myDIV.appendChild(bookLanguage);
 
     }
 }
@@ -114,29 +120,31 @@ bookList();
 
 //7
 
-let bookCover = {
+
+
+let coverPhoto = {
     wanted:'./images/wanted.jpg', 
     the_da_vinci_code:'./images/davincicode.jpeg',
     world_war_z: './images/wwz.jpg',
     the_last_vampire: './images/lastvampire.jpg',
-    filthy_rich: './images/filthy-rich.jpg',
     the_dark_knight_returns: './images/dkr.jpg',
+    filthy_rich: './images/filthy-rich.jpg',
     watchmen: './images/watchmen.jpg',
     catch_22: './images/catch22.jpg',
     the_deceiver: './images/thedeceiver.jpg',
     punk_rock_jesus: './images/prj.jpg',
 };
 
-let arrayKeys = Object.keys(bookCover);
 
-function addCover() {
-    for (i of arrayKeys){
+let imgKey = Object.keys(coverPhoto);
+
+function myPhoto(){
+    for(let i of imgKey){
         let img = document.createElement('img');
-        img.setAttribute('src', bookCover[i]);
-        img.setAttribute('alt', i);
-        img.setAttribute('id', i);
+        img.setAttribute('src',coverPhoto[i]);
         document.getElementById(i).appendChild(img);
-    } 
-} 
+    }
+}
 
-addCover()
+myPhoto();
+
